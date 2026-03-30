@@ -13,7 +13,8 @@ html, body{
 
 :root{
     --parentElementWidth:100%;
-    --mainFont: 
+    --mainFont: "Datatype", monospace;
+    --bannerFont: "Kavoon", serif;
 }
 
 
@@ -25,8 +26,14 @@ html, body{
   font-variation-settings:
   "wdth" 100;
 }
+.kavoon-regular {
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 header, footer{
-  font-family: "Datatype", "monospace";
+  font-family: var(--mainFont);
 }
 
 
@@ -62,25 +69,43 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-direction:column;
-
-    
-    
+    flex-direction:column; 
 }
-
-#btnContainer{
-    width:90px;
-    
+#businessTitle{
+  color:white;
+  font-family:var(--bannerFont);
+  font-size:2.7em;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  width:400px;
+  height:auto;
+  align-self:start;
+  margin-left:40px;
+}
+#bannerText2{
+  font-size:1rem;
+}
+#bannerBtn{
     display:flex;
-    /*align-self helps with center the button div witht the inputs center*/
-    align-self:start;
     align-items:center;
-    justify-content:start;
-   
-    
-   
-
+    justify-content:center;
+    color:white;
+    width: 200px;
+    height:35px;
+    border-radius:25px;
+    border:none;
+    cursor:pointer;
+    text-decoration:none;
+    background:linear-gradient(45deg, blue, rgb(139, 139, 226));
+    font-family: "Datatype", "monospace";
 }
+
+
+
+
 
 /* for the form button*/
 #btn{
@@ -117,6 +142,7 @@ header{
   height: clamp(100px, 300px, 200px);
   background-color:white;
   border:3px solid black;
+  box-shadow: 0px 0px 10px  rgb(139, 139, 226);
 }
 #underline1{
   width: 75%;
@@ -179,6 +205,7 @@ header{
 }
 #card {
   display:flex;
+  
   height:200px;
   flex-direction:column;
   padding: 80px,0 ,100px;
@@ -452,6 +479,24 @@ footer{
     padding:2em;
     margin:0;
 
+  }
+  #businessTitle{
+    color:white;
+    font-family:var(--bannerFont);
+    font-size:2em;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    width:auto;
+    height:auto;
+    align-self:center;
+    margin:0;
+    padding:0;
+  }
+  #bannerText2{
+    font-size:1rem;
   }
   
   
