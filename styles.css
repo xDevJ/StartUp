@@ -72,7 +72,7 @@ header{
     flex-direction:column; 
 }
 #businessTitle{
-  color:white;
+ 
   font-family:var(--bannerFont);
   font-size:2.7em;
   text-align:center;
@@ -84,6 +84,12 @@ header{
   height:auto;
   align-self:start;
   margin-left:40px;
+}
+#businessTitle p #first-letter{
+  color: blue;
+}
+#businessTitle p #last-word{
+  color:white;
 }
 #bannerText2{
   font-size:1rem;
@@ -119,15 +125,17 @@ header{
     border:none;
     cursor:pointer;
     text-decoration:none;
-    background: linear-gradient(0deg, rgb(240, 240, 253), rgb(233, 232, 255) 40%, rgb(251, 251, 253));
+    background:linear-gradient(45deg, blue, rgb(139, 139, 226));
+    color:whitesmoke;
     font-family: "Datatype", "monospace";
     
 }
-
-#btn:hover{
-   background:linear-gradient(45deg, blue, rgb(139, 139, 226)); 
-   color:whitesmoke;
+#bannerBtn a{
+  text-decoration:none;
+  color:white;
 }
+
+
 #circleDiv{
   border-radius:50%;
   font-size:larger;
@@ -481,7 +489,7 @@ footer{
 
   }
   #businessTitle{
-    color:white;
+    
     font-family:var(--bannerFont);
     font-size:2em;
     text-align:center;
