@@ -313,6 +313,18 @@ h1{
   width:100%;
   text-align:center;
 }
+/* on ln 297 the id firstName isn't accepting the css properties */
+#firstName{
+  max-width:250px;
+  height:40px;
+  padding-left:20px;
+  outline:none;
+  border:none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background:none;
+  border-bottom: 2px solid black;
+}
 
 #firstName, 
 #lastName, 
@@ -390,6 +402,18 @@ li{
 #msgDiv{
   padding:1.4em;
   margin:0;
+}
+#form{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+  padding:25px;
+  font-family: var(--bannerFont);
+  
+}
+#form input{
+  background-color:transparent;
+  border-bottom:1px solid black;
 }
 
 
@@ -506,7 +530,11 @@ footer{
   #bannerText2{
     font-size:1rem;
   }
-  
+  #form{
+    width:75%;
+    height:42vh;
+    
+  }
   
 
  
@@ -526,7 +554,7 @@ footer{
   
   }
 
- 
+  
   
 }
 
