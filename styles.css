@@ -6,7 +6,7 @@
 }
 html, body{
     height:100%;
-    
+
     margin:0;
     padding:0;
 }
@@ -31,6 +31,18 @@ html, body{
   font-weight: 400;
   font-style: normal;
 }
+
+#formSection{
+  display:flex;
+  
+  align-items:start;
+  justify-content:center;
+  padding:10px;
+  background:linear-gradient(45deg, blue, rgb(139, 139, 226));
+
+  height:auto;
+};
+
 
 header, footer{
   font-family: var(--mainFont);
@@ -377,7 +389,7 @@ ul{
   width:20px;
   height:20px;
   background-color:white;
- 
+  
 }
 #imgDiv{
   height:40px;
@@ -403,10 +415,13 @@ li{
   padding:1.4em;
   margin:0;
 }
+
 #form{
-  display:flex;
+  display:none;
+  height:auto;
+  
   flex-direction:column;
-  gap: 10px;
+  gap: 30px;
   padding:25px;
   font-family: var(--bannerFont);
   
@@ -416,8 +431,29 @@ li{
   border-bottom:1px solid black;
 }
 
+#cardContainer{
+  display:flex;
+  width: 100%;
+  justify-content:center;
+  gap:20px;
+}
 
-/* decrease height a bit and add box-shadow*/
+.serviceCards{
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 280px;
+  text-align:center;
+  color: white;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  cursor:pointer;
+  
+}
+.serviceCards:hover{
+ background-color: rgb(250, 250, 252, 0.4); 
+}
 
 
 
@@ -532,9 +568,14 @@ footer{
   }
   #form{
     width:75%;
-    height:42vh;
+    
     
   }
+ 
+  
+
+
+}
   
 
  
@@ -542,7 +583,7 @@ footer{
 
   
   
-}
+
 @media(min-width:900px){
   #mainContent{
    
@@ -553,6 +594,7 @@ footer{
    
   
   }
+  
 
   
   
