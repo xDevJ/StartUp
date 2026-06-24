@@ -7,7 +7,7 @@ pickUpDelivery.addEventListener('click', renderForm);
 
 function renderForm(e){
 
-    console.log(`${e.target.textContent} has been clicked`)
+    console.log(`${e.target.textContent} has been clicked`);
     
 }
 
